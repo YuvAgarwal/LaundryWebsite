@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressLaundry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="page-title">
+                    <h2 class="lead" style="font-size:50px">Order Details</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contactform">
+            <div class="col-sm-12 col-md-6">
+                <form enctype="text/plain" action="MAILTO:xyz@expresslaundry.com" method="post" class="form-contact shake" id="contactForm" data-toggle="validator">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name *" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="Enter Email *" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number *" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="address" placeholder="Enter Address *" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="city" placeholder="Enter City *" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="zip" placeholder="Enter Zip *" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Date" placeholder="Pickup Date *" required onfocus="(this.type='date')" onblur="(this.type='text')">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Time" placeholder="Pickup Time*" required onfocus="(this.type='time')" onblur="(this.type='text')">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <div id="success"></div>
+                        <button class="gohome" onclick="navigateToPage()">Go Back</button>
+                        <button type="submit" class="btn btn-default" id="submitbutton">Place the Order</button>
+                        <script type="text/javascript">
+                            function navigateToPage() {
+                                window.location.href = 'cart.html';
+                            }
+                            function isValidInput(input) {
+                                return input.value.trim() !== '';
+                            }
+                            function validateForm() {
+                                var inputs = document.querySelectorAll('#contactForm input[type="text"], #contactForm textarea');
+                                for (var i = 0; i < inputs.length; i++) {
+                                    if (!isValidInput(inputs[i])) {
+                                        alert('Please fill out all fields correctly.');
+                                        return false;
+                                    }
+                                }
+                                return true;
+                            }
+                            document.getElementById('contactForm').onsubmit = function(event) {
+                                event.preventDefault();
+                                if (validateForm()) {
+                                    location.href = 'thankyou_cart.html';
+                                }
+                            };
+                        </script>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

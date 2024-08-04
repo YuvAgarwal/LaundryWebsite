@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "name":"T-Shirt/Shirt",
+        "price": 50
+    },
+    {
+        "id": 2,
+        "name":"Trouser/Jeans",
+        "price": 50
+    },
+    {
+        "id": 3,
+        "name":"Suit 2pcs",
+        "price": 500
+    },
+    {
+        "id": 4,
+        "name":"Suit 3pcs",
+        "price": 700
+    },
+    {
+        "id": 5,
+        "name":"Jacket",
+        "price": 250
+    },
+    {
+        "id": 6,
+        "name":"Blazer",
+        "price": 300
+    },
+    {
+        "id": 7,
+        "name":"Coat",
+        "price": 350
+    },
+    {
+        "id": 8,
+        "name":"Sweater",
+        "price": 200
+    },
+    {
+        "id": 9,
+        "name":"Saree",
+        "price": 300
+    },
+    {
+        "id": 10,
+        "name":"Lehenga",
+        "price": 600
+    },
+    {
+        "id": 11,
+        "name":"Dress/Gown",
+        "price": 300
+    },
+    {
+        "id": 12,
+        "name":"Salwar",
+        "price": 100
+    },
+    {
+        "id": 13,
+        "name":"Blanket ",
+        "price": 300
+    },
+    {
+        "id": 14,
+        "name":"Bedsheet",
+        "price": 200
+    },
+    {
+        "id": 15,
+        "name":"Quilt",
+        "price": 600
+    },
+    {
+        "id": 16,
+        "name":"Carpet",
+        "price": 750
+    },
+    {
+        "id": 17,
+        "name":"Curtain",
+        "price": 1000
+    },
+    {
+        "id": 18,
+        "name":"Shoes",
+        "price": 200
+    }
+
+
+]

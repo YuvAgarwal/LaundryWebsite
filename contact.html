@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExpressLaundry</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+</head>
+
+<body>
+	<!-- NAVBAR SECTION -->
+	<div class="navbar navbar-main navbar-fixed-top">
+		
+		
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo_blue.png" alt="" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">HOME</a></li>					
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="pricing.html">PRICING</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+
+ 
+	<!-- BANNER -->
+	<div class="section subbanner" style="background:url('images/slide_page.jpg') no-repeat center center;   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="caption">
+						<h3>CONTACT</h3>
+						<ol class="breadcrumb">
+						  <li><a href="index.html">Home</a></li>
+						  <li class="active">Contact</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<!-- ABOUT SECTION -->
+	<div id="services" class="section services">
+		<div class="container">
+			<!--  -->
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="page-title">
+						<h2 class="lead">CONTACT US</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contactform">
+			
+				<div class="col-sm-12 col-md-6">
+					
+					<form enctype="text/plain" action="MAILTO:xyz@expresslaundry.com" method="post"  class="form-contact shake" id="contactForm"  data-toggle="validator">
+						<div class="form-group">
+							<input type="text" class="form-control" id="name" placeholder="Enter Name *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="email" placeholder="Enter Email *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="phone" placeholder="Enter Phone Number *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="address" placeholder="Enter Address *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="city" placeholder="Enter City *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="zip" placeholder="Enter Zip *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							 <textarea id="message" class="form-control" rows="5" placeholder="Enter Your Message *" required></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<div id="success"></div>
+							<button type="submit" class="btn btn-default" id="submitbutton">SEND A MESSAGE</button>
+							<script type="text/javascript">
+								function isValidInput(input) {
+								return input.value.trim() !== '';
+								}
+								function validateForm() {
+								var inputs = document.querySelectorAll('#contactForm input[type="text"], #contactForm textarea');
+								for (var i = 0; i < inputs.length; i++) {
+									if (!isValidInput(inputs[i])) {
+									alert('Please fill out all fields correctly.');
+									return false;
+									}
+								}
+								return true;
+								}
+								document.getElementById('contactForm').onsubmit = function(event) {
+								event.preventDefault();
+								if (validateForm()) {
+									location.href = 'thankyou.html';
+								}
+								};
+							</script>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+		<!-- FOOTER SECTION -->
+		<div class="footer">
+	
+			<div class="f-desc">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h4>ABOUT US</h4>
+								</div>
+								<p>	We provides premium washing and dry cleaning service leveraging mobile based technology.
+									our aims at providing high quality laundry services coupled with customized experience and express delivery.
+									We pick up your dirty clothes from your doorstep and deliver fresh, clean clothes back at your doorstep.
+								</p>
+								
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h4>CONNECT WITH US</h4>
+								</div>
+								<div class="footer-sosmed">
+									<a href="https://facebook.com" title="">
+										<div class="item">
+											<i class="fa fa-facebook"></i>
+										</div>
+									</a>
+									<a href="https://twitter.com/" title="">
+										<div class="item">
+											<i class="fa fa-twitter"></i>
+										</div>
+									</a>
+									<a href="https://instagram.com" title="">
+										<div class="item">
+											<i class="fa fa-instagram"></i>
+										</div>
+									</a>							
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h4>OPERATIONAL TIMINGS</h4>
+								</div>
+								<p>
+									Monday-Saturday<br>
+									10AM-6PM<br><br><br>
+									We are happy to help you.
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h4>GET IN TOUCH</h4>
+								</div>
+								<div class="footer-getintouch">
+									<div class="footer-getintouch-item">
+										<div class="icon">
+											<b class="fa fa-phone"></b>
+										</div>
+										<div class="desc">
+											<div class="desc-1">Phone</div>
+											<div class="desc-2">:</div>
+											<div class="desc-3">9876543210</div>
+										</div>
+									</div>
+									<div class="footer-getintouch-item">
+										<div class="icon">
+											<b class="fa fa-envelope "></b>
+										</div>
+										<div class="desc">
+											<div class="desc-1">Email</div>
+											<div class="desc-2">:</div>
+											<div class="desc-3"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" title="">info@expresslaundry.com</a></div>
+										</div>
+									</div>
+									<div class="footer-getintouch-item">
+										<div class="icon">
+											<b class="fa fa-globe"></b>
+										</div>
+										<div class="desc">
+											<div class="desc-1">Website </div>
+											<div class="desc-2">:</div>
+											<div class="desc-3"><a href="index.html">www.expresslaundry.com</a></div>
+										</div>
+									</div>
+																
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+					
+			</div>
+			<div class="fcopy">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p class="ftex">&copy; 2024 Express Laundry All Rights Reserved</p> 
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+	
+	
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&amp;ver=4.1.5'></script>
+	<script type='text/javascript' src='js/jqBootstrapValidation.js'></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
+	
+	<!-- sendmail -->
+	<script type="text/javascript" src="js/validator.min.js"></script>
+	<script type="text/javascript" src="js/form-scripts.js"></script>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+
+	
+</body>
+
+</html>
